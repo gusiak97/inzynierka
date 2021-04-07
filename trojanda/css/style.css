@@ -1,0 +1,645 @@
+body, html {
+	font-family: 'Montserrat', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	color: #333333;
+	font-weight: 400;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+h2 {
+	margin: 0 0 0 0;
+	font-weight: 500;
+	font-size: 34px;
+	color: #333;
+	text-transform: uppercase;
+	text-align: center;
+}
+h3 {
+	font-size: 22px;
+	font-weight: 500;
+	color: #333;
+}
+h4 {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #333;
+}
+h5 {
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 20px;
+}
+td {
+	text-align: left;
+}
+p {
+	font-size: 16px;
+}
+p.intro {
+	margin: 12px 0 0;
+	line-height: 15px;
+}
+a {
+	color: #7e1b1b;
+}
+a:hover, a:focus {
+	text-decoration: none;
+	color: #222;
+}
+ul, ol {
+	list-style: none;
+}
+
+ul, ol {
+	padding: 0;
+	webkit-padding: 0;
+	moz-padding: 0;
+}
+hr {
+	height: 3px;
+	width: 100px;
+	position: relative;
+	text-align: center;
+	background: #7e1b1b;
+	margin-bottom: 40px;
+	border: 0;
+}
+.btn:active, .btn.active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+	outline: none;
+	outline-offset: none;
+}
+.shaded {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(35,50,63,0.15);
+}
+.shaded:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255,0,0,0), rgba(192,41,66,0.3));
+    background: linear-gradient(to bottom, rgba(255,0,0,0), rgba(31,38,46,0.9));
+}
+.button {
+  background-color: #f3f3f3;
+  border: none;
+  color: #333;
+  padding: 20px 50px;
+  text-align: center;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: transparent;
+  border: 2px solid #f3f3f3;
+  color: #f3f3f3;
+}
+
+
+
+/* Navigation 
+=========================================================*/
+#menu {
+	padding: 20px;
+	transition: all 0.8s;
+}
+#menu.navbar-default {
+	background-color: rgba(248, 248, 248, 0);
+	border-color: rgba(231, 231, 231, 0);
+}
+#menu a.navbar-brand {
+	font-family: 'Dancing Script', cursive;
+	font-size: 36px;
+	color: #7e1b1b;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+#menu.navbar-default .navbar-nav > li > a {
+	text-transform: uppercase;
+	color: #f6f6f6;
+	font-weight: 500;
+	font-size: 15px;
+	padding: 5px 0;
+	border: 2px solid transparent;
+	letter-spacing: 0.5px;
+	margin: 10px 15px 0 15px;
+}
+#menu.navbar-default .navbar-nav > li > a {
+	text-transform: uppercase;
+	color: #f6f6f6;
+	font-weight: 500;
+	font-size: 15px;
+	padding: 5px 0;
+	border: 2px solid transparent;
+	letter-spacing: 0.5px;
+	margin: 10px 15px 0 15px;
+}
+#menu.navbar-default .navbar-nav > li > a:hover {
+	color: #7e1b1b;
+}
+.on {
+	background-color: #b3b3b3 !important;
+	padding: 0 !important;
+	padding: 10px 0 !important;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #7e1b1b !important;
+	background-color: transparent;
+}
+.navbar-toggle {
+	border-radius: 0;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #7e1b1b;
+	border-color: #7e1b1b;
+}
+.navbar-default .navbar-toggle:hover>.icon-bar {
+	background-color: #ddd;
+}
+
+.btn-custom {
+	text-transform: uppercase;
+	color: #f6f6f6;
+	background-color: #7e1b1b;
+	border: 0;
+	padding: 14px 20px;
+	margin: 0;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	border-radius: 0;
+	margin-top: 20px;
+	transition: all 0.5s;
+}
+.btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
+	color: #f6f6f6;
+	background-color: #628d0f;
+}
+
+
+
+/* Header  
+=========================================================*/
+.intro {
+	display: table;
+	width: 100%;
+	padding: 0;
+	background: url(../img/intro-bg.jpg) no-repeat center center;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+
+
+}
+.intro .overlay {
+	background: rgba(0,0,0,0.2);
+}
+.intro h1 {
+	font-family: 'Dancing Script', cursive;
+	color: #f6f6f6;
+	font-size: 10em;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+header .intro-text {
+	padding-top: 120px;
+	min-height: 650px;
+	text-align: center;
+}
+
+
+
+
+/* About
+========================================================= */
+#about {
+	padding: 80px 0;
+   background-color: #cccccc; 
+   background-image: linear-gradient(#cccccc, #f6f6f6);
+}
+#about h3 {
+	font-size: 20px;
+}
+#about .about-text {
+	margin-left: 10px;
+}
+#about p {
+	line-height: 24px;
+	margin: 15px 0 10px;
+}
+
+
+
+/* Events
+========================================================= */
+.events {
+    
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    min-height: 300px;
+    height: auto;
+    overflow: hidden;
+ }
+
+.events .events_item {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+    padding: 130px 40px 130px 40px;
+    top: 8px;
+	right: 8px;
+	bottom: 8px;
+	left: 8px;
+   
+ }
+
+.events .events_image {
+    transition: all .5s ease;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.9;
+    filter: alpha(opacity=50);
+
+}
+
+.events .events_item h2 {
+  font-family: 'Dancing Script', cursive;
+  margin: 0 0 0 0;
+  font-weight: 500;
+  font-size: 50px;
+  color: #333;
+  text-transform: none;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.events .events_item .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f6f6f6;
+}
+
+.events .events_item:hover .overlay {
+  opacity: 0.7;
+}
+
+
+/* Team
+========================================================= */
+
+#team {
+	margin-top: 50px;
+	color: #f6f6f6;
+	background: #444 url(../img/team-background.jpg) center top no-repeat fixed;
+	background-size: cover;
+}
+#team .overlay {
+	padding: 80px 0 80px 0;
+	background: rgba(0, 0, 0, 0.75);
+}
+#team h2{
+	color: #f6f6f6;
+}
+#team img/gallery-bg {
+	width: 200px;
+}
+#team .thumbnail {
+	background: transparent;
+	border: 0;
+}
+#team .thumbnail .team-img {
+	margin-top: 50px;
+	display: inline-block;
+	position: relative;
+}
+#team .thumbnail .team-img:before {
+	display: line-block;
+	content: '';
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	bottom: 8px;
+	left: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+#team .thumbnail .caption h3{
+	padding-top: 10px;
+	color: #f6f6f6;
+}
+
+
+/* Gallery
+========================================================= */
+#gallery {
+   padding: 80px 0 80px 0;
+   background-color: #f6f6f6; 
+}
+#gallery h3 {
+	font-size: 20px;
+}
+#gallery .gallery-text {
+	margin-left: 10px; 
+}
+#gallery p {
+	line-height: 24px;
+	margin: 15px 0 50px;
+}
+#gallery .gallery-item {
+    position: relative;
+    display: inline-block;
+	margin: 30px 0;
+}
+#gallery img:hover{
+	transition: 0.5s;
+	transform: scale(1.05);
+}
+
+
+/* Calendar
+========================================================= */
+
+#calendar {
+	color: #f6f6f6;
+}
+#calendar .overlay {
+	padding: 80px 0 80px 0;
+	background: rgba(0, 0, 0, 0.75);
+}
+#calendar h2{
+	color: #f6f6f6;
+}
+
+#calendar form{
+	color: #666;
+}
+#calendar form button{
+	padding: 11px;
+}
+#calendar .data_type{
+	padding: 3px;
+}
+
+
+/* Contact Section 
+========================================================= */
+#contact {
+	padding: 80px 0 80px 0;
+	background: #f6f6f6;
+}
+#contact .section-title p {
+	font-size: 20px; 
+	color: #7e1b1b;
+}
+
+
+
+/* Login
+========================================================= */
+
+#login {
+	background: #444 url(../img/team-background.jpg) center top no-repeat fixed;
+	background-size: cover;
+}
+#login .overlay {
+	padding: 80px 0 150px 0;
+	background: rgba(0, 0, 0, 0.75);
+}
+#login img/gallery-bg {
+	width: 200px;
+}
+
+
+/* Footer
+========================================================= */
+footer{
+	background-color: #b3b3b3;
+	padding: 9px 0 1px 0;
+}
+footer p{
+	text-align: center;
+
+}
+
+
+
+
+
+/* ================================================================================================
+=================================================================================================*/
+
+
+/* Login form
+=========================================================*/
+.intro .login-form{
+	margin: 30px auto;
+	width: 450px;
+	height: auto;
+	background-color: #f3f3f3;
+	text-align: center;
+	opacity: 0.9;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+
+}
+.intro .fill{
+	text-align: left;
+	padding:40px 75px 0px;
+}
+input[type=text], input[type=password] {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 0;
+  display: inline-block;
+
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.intro button {
+  background-color: #999;
+  padding: 15px 15px;
+  margin: 35px 0;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+  color: #fff;
+}
+
+.intro button:hover {
+  opacity: 0.8;
+}
+
+
+
+
+/* ================================================================================================
+=================================================================================================*/
+
+
+/* Logged User
+=========================================================*/
+.intro .logged_nav{
+	margin: 20px auto;
+	padding: 20px;
+	width: auto;
+	height: auto;
+	background-color: #f3f3f3;
+	text-align: center;
+	opacity: 0.9;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+
+}
+
+.intro .logged_cont{
+	margin: 20px auto;
+	padding: 20px;
+	width: auto;
+	height: 400px;
+	background-color: #f3f3f3;
+	opacity: 0.9;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+
+}
+.intro .logged_cont .data{
+	display: inline-block;
+	width: 100px;
+	margin-left: 50px;
+	text-align: left;
+
+}
+.intro hr{
+	height: 1px;
+	width: 400px;
+	position: relative;
+	text-align: center;
+	background: #d9d9d9;
+	margin-top: 15px;
+	margin-bottom: -10px;
+	border: 0;
+}
+
+/* ================================================================================================
+=================================================================================================*/
+
+body{ font-family: sans-serif;}
+.none{ display:none;}
+.dropdown{color: #444444;font-size:17px;}
+#calender_section{ width:700px; margin:30px auto 0;}
+#calender_section h2{ background-color:#efefef; color:#444444; font-size:17px; text-align:center; line-height:40px;}
+#calender_section h2 a{ color:#F58220; float:none;}
+#calender_section_top{ width:100%; float:left; margin-top:20px;}
+#calender_section_top ul{padding:0; list-style-type:none;}
+#calender_section_top ul li{ float:left; display:block; width:99px; border-right:1px solid #fff;  text-align:center; font-size:14px; min-height:0; background:none; box-shadow:none; margin:0; padding:0;}
+#calender_section_bot{ width:100%; margin-top:20px; float:left; border-left:1px solid #ccc; border-bottom:1px solid #ccc;}
+#calender_section_bot ul{ margin:0; padding:0; list-style-type:none;}
+#calender_section_bot ul li{ float:left; width:99px; height:80px; text-align:center; border-top:1px solid #ccc; border-right:1px solid #ccc; min-height:0; background:none; box-shadow:none; margin:0; padding:0; position:relative;}
+#calender_section_bot ul li span{ margin-top:7px; float:left; margin-left:7px; text-align:center;}
+
+.grey{ background-color:#DDDDDD !important;}
+.light_sky{ background-color:#7e1b1b !important; opacity: 0.7;}
+
+/*========== Hover Popup ===============*/
+.date_cell { cursor: pointer; cursor: hand; }
+.date_cell:hover { background: #DDDDDD !important; }
+.date_popup_wrap {
+	position: absolute;
+	width: 143px;
+	height: 115px;
+	z-index: 9999;
+	top: -115px;
+	left:-55px;
+	background: transparent url(add-new-event.png) no-repeat top left;
+	color: #666 !important;
+}
+.events_window {
+	overflow: hidden;
+	overflow-y: auto;
+	width: 133px;
+	height: 115px;
+	margin-top: 28px;
+	margin-left: 25px;
+}
+.event_wrap {
+	margin-bottom: 10px; padding-bottom: 10px;
+	border-bottom: solid 1px #E4E4E7;
+	font-size: 12px;
+	padding: 3px;
+}
+.date_window {
+	margin-top:20px;
+	margin-bottom: 2px;
+	padding: 5px;
+	font-size: 16px;
+	margin-left:9px;
+	margin-right:14px
+}
+.popup_event {
+	margin-bottom: 2px;
+	padding: 2px;
+	font-size: 16px;
+	width:100%;
+}
+.popup_event a {color: #000000 !important;}
+.packeg_box a {color: #F58220;float: right;}
+a:hover {color: #181919;text-decoration: underline;}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+#calender_section{ width:336px;}
+#calender_section_top ul li{ width:47px;}
+#calender_section_bot ul li{ width:47px;}
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+#calender_section{ width:219px;}
+#calender_section_top ul li{ width:30px; font-size:11px;}
+#calender_section_bot ul li{ width:30px;}
+#calender_section_bot{ width:217px;}
+#calender_section_bot ul li{ height:50px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+#calender_section{ width:530px;}
+#calender_section_top ul li{ width:74px;}
+#calender_section_bot ul li{ width:74px;}
+#calender_section_bot{ width:525px;}
+#calender_section_bot ul li{ height:50px;}
+}
